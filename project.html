@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project | AEY Studio</title>
+  <meta name="description" content="AEY Studio project details page." />
+  <meta name="theme-color" content="#07111e" id="themeColorMeta" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="project-page">
+  <div class="page-glow glow-a" aria-hidden="true"></div>
+  <div class="page-glow glow-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell compact">
+      <a href="index.html" class="brand" aria-label="AEY Studio home">
+        <img src="assets/logo-dynamic.svg" alt="AEY Studio" class="brand-logo" width="190" height="55" />
+      </a>
+      <div class="header-actions inline-end">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme" aria-pressed="true">
+          <span class="theme-track">
+            <span class="theme-icon sun" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.6v2.1M12 19.3v2.1M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M2.6 12h2.1M19.3 12h2.1M4.9 19.1l1.5-1.5M17.6 6.4l1.5-1.5"></path></svg></span>
+            <span class="theme-icon moon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 15.5A8.6 8.6 0 0 1 8.5 4 9.4 9.4 0 1 0 20 15.5Z"></path></svg></span>
+            <span class="theme-thumb"></span>
+          </span>
+        </button>
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Toggle language">AR</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="project-main section-first">
+    <div class="container project-hero reveal visible">
+      <div class="project-head">
+        <a href="index.html#portfolio" class="back-link" data-i18n="backToHome">← Back to portfolio</a>
+        <p class="section-kicker" id="projectCategory">Case Study</p>
+        <h1 id="projectTitle">Project Title</h1>
+        <p class="project-intro" id="projectSummary">Project summary.</p>
+      </div>
+
+      <div class="project-layout">
+        <div class="project-hero-card">
+          <div class="project-gradient" id="projectGradient"></div>
+          <div class="project-placeholder-text" id="projectShort">AEY</div>
+        </div>
+        <aside class="project-meta">
+          <div class="meta-item"><span data-i18n="metaService">Service</span><strong id="projectService">Website Design</strong></div>
+          <div class="meta-item"><span data-i18n="metaType">Type</span><strong id="projectType">Portfolio</strong></div>
+          <div class="meta-item"><span data-i18n="metaYear">Year</span><strong id="projectYear">2026</strong></div>
+        </aside>
+      </div>
+
+      <div class="project-details">
+        <article class="detail-card"><h2 data-i18n="challengeTitle">Challenge</h2><p id="projectChallenge">Challenge details.</p></article>
+        <article class="detail-card"><h2 data-i18n="solutionTitle">Solution</h2><p id="projectSolution">Solution details.</p></article>
+      </div>
+    </div>
+  </main>
+
+  <script defer src="js/projects.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
