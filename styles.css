@@ -264,3 +264,38 @@ html[dir="rtl"] .back-link { direction: rtl; }
   .btn { width: 100%; }
   .form-actions { flex-direction: column; }
 }
+
+
+
+/* Logo swap by theme */
+.logo,
+.footer-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-light,
+.footer-logo-light {
+  display: none;
+}
+
+html[data-theme="dark"] .logo-light,
+html[data-theme="dark"] .footer-logo-light {
+  display: block;
+}
+
+html[data-theme="dark"] .logo-dark,
+html[data-theme="dark"] .footer-logo-dark {
+  display: none;
+}
+
+html[data-theme="light"] .logo-dark,
+html[data-theme="light"] .footer-logo-dark {
+  display: block;
+}
+
+html[data-theme="light"] .logo-light,
+html[data-theme="light"] .footer-logo-light {
+  display: none;
+}
