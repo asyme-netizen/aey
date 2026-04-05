@@ -298,3 +298,22 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
+
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle?.addEventListener("click", () => {
+  const html = document.documentElement;
+  const currentTheme = html.getAttribute("data-theme") || "dark";
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+  html.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }
+});
