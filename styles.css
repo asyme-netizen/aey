@@ -299,3 +299,41 @@ html[data-theme="light"] .logo-light,
 html[data-theme="light"] .footer-logo-light {
   display: none;
 }
+
+.form-status {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.logo,
+.footer-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-light,
+.footer-logo-light {
+  display: none;
+}
+
+html[data-theme="dark"] .logo-light,
+html[data-theme="dark"] .footer-logo-light {
+  display: block;
+}
+
+html[data-theme="dark"] .logo-dark,
+html[data-theme="dark"] .footer-logo-dark {
+  display: none;
+}
+
+html[data-theme="light"] .logo-dark,
+html[data-theme="light"] .footer-logo-dark {
+  display: block;
+}
+
+html[data-theme="light"] .logo-light,
+html[data-theme="light"] .footer-logo-light {
+  display: none;
+}
